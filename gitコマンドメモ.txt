@@ -1,0 +1,25 @@
+
+簡潔に未プッシュのコミットを確認したい場合
+git log --oneline origin/ブランチ名..HEAD
+
+
+基本的なコミット履歴の表示
+git log
+
+
+コミット履歴を1行に簡潔に表示したい場合
+git log --oneline
+
+
+特定のコミットで行われた変更内容を詳細に表示
+git show <コミットID>
+
+特定のコミットで変更されたファイルのリストを表示
+git diff-tree --no-commit-id --name-only -r <コミットID>
+
+
+
+直前のコミットを取り消す（変更内容をステージングエリアに戻す。変更は残る。）
+git reset --soft HEAD^
+
+
